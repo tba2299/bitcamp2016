@@ -1,1123 +1,612 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>12F36189A360DF97BF53F4D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>663B5E466ECB4CA445BBCA1B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>15A841A1EB44C0C8125D38A9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>31C06A10D45480AD8ACD2BA2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59E9C1CB8B126005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EA71CB8B126005ED3FE</string>
-				<string>49D59EBC1CB8B127005ED3FE</string>
-				<string>49D59EC71CB8B127005ED3FE</string>
-				<string>49D59EA61CB8B126005ED3FE</string>
-				<string>C30A0AC0C98B20BE253840DF</string>
-				<string>5691E32AA6D2050E9925A9A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59E9D1CB8B126005ED3FE</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>TNAdevs</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>49D59EA41CB8B126005ED3FE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>969D6T2MXS</string>
-					</dict>
-					<key>49D59EB81CB8B127005ED3FE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>969D6T2MXS</string>
-						<key>TestTargetID</key>
-						<string>49D59EA41CB8B126005ED3FE</string>
-					</dict>
-					<key>49D59EC31CB8B127005ED3FE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>DevelopmentTeam</key>
-						<string>969D6T2MXS</string>
-						<key>TestTargetID</key>
-						<string>49D59EA41CB8B126005ED3FE</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>49D59EA01CB8B126005ED3FE</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>49D59E9C1CB8B126005ED3FE</string>
-			<key>productRefGroup</key>
-			<string>49D59EA61CB8B126005ED3FE</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>49D59EA41CB8B126005ED3FE</string>
-				<string>49D59EB81CB8B127005ED3FE</string>
-				<string>49D59EC31CB8B127005ED3FE</string>
-			</array>
-		</dict>
-		<key>49D59EA01CB8B126005ED3FE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>49D59ECB1CB8B127005ED3FE</string>
-				<string>49D59ECC1CB8B127005ED3FE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>49D59EA11CB8B126005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49D59EAB1CB8B127005ED3FE</string>
-				<string>49D59EA91CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EA21CB8B126005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>12F36189A360DF97BF53F4D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EA31CB8B126005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49D59EB31CB8B127005ED3FE</string>
-				<string>49D59EB01CB8B127005ED3FE</string>
-				<string>49D59EAE1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EA41CB8B126005ED3FE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>49D59ECD1CB8B127005ED3FE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FF1F26209DDA3DE6FDA64939</string>
-				<string>49D59EA11CB8B126005ED3FE</string>
-				<string>49D59EA21CB8B126005ED3FE</string>
-				<string>49D59EA31CB8B126005ED3FE</string>
-				<string>FBA3982B1BFBF23C03D31DCA</string>
-				<string>15A841A1EB44C0C8125D38A9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>bitcamp2016</string>
-			<key>productName</key>
-			<string>bitcamp2016</string>
-			<key>productReference</key>
-			<string>49D59EA51CB8B126005ED3FE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>49D59EA51CB8B126005ED3FE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>bitcamp2016.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>49D59EA61CB8B126005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EA51CB8B126005ED3FE</string>
-				<string>49D59EB91CB8B127005ED3FE</string>
-				<string>49D59EC41CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EA71CB8B126005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EA81CB8B127005ED3FE</string>
-				<string>49D59EAA1CB8B127005ED3FE</string>
-				<string>49D59EAC1CB8B127005ED3FE</string>
-				<string>49D59EAF1CB8B127005ED3FE</string>
-				<string>49D59EB11CB8B127005ED3FE</string>
-				<string>49D59EB41CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bitcamp2016</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EA81CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EA91CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EA81CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EAA1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EAB1CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EAA1CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EAC1CB8B127005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EAD1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EAD1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EAE1CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EAC1CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EAF1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EB01CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EAF1CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EB11CB8B127005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EB21CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EB21CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EB31CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EB11CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EB41CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EB51CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49D59EBE1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EB61CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EB71CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EB81CB8B127005ED3FE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>49D59ED01CB8B127005ED3FE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>49D59EB51CB8B127005ED3FE</string>
-				<string>49D59EB61CB8B127005ED3FE</string>
-				<string>49D59EB71CB8B127005ED3FE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>49D59EBB1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>bitcamp2016Tests</string>
-			<key>productName</key>
-			<string>bitcamp2016Tests</string>
-			<key>productReference</key>
-			<string>49D59EB91CB8B127005ED3FE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>49D59EB91CB8B127005ED3FE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>bitcamp2016Tests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>49D59EBA1CB8B127005ED3FE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>49D59E9D1CB8B126005ED3FE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>49D59EA41CB8B126005ED3FE</string>
-			<key>remoteInfo</key>
-			<string>bitcamp2016</string>
-		</dict>
-		<key>49D59EBB1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>49D59EA41CB8B126005ED3FE</string>
-			<key>targetProxy</key>
-			<string>49D59EBA1CB8B127005ED3FE</string>
-		</dict>
-		<key>49D59EBC1CB8B127005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EBD1CB8B127005ED3FE</string>
-				<string>49D59EBF1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bitcamp2016Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EBD1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>bitcamp2016Tests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EBE1CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EBD1CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59EBF1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EC01CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49D59EC91CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EC11CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EC21CB8B127005ED3FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49D59EC31CB8B127005ED3FE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>49D59ED31CB8B127005ED3FE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>49D59EC01CB8B127005ED3FE</string>
-				<string>49D59EC11CB8B127005ED3FE</string>
-				<string>49D59EC21CB8B127005ED3FE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>49D59EC61CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>bitcamp2016UITests</string>
-			<key>productName</key>
-			<string>bitcamp2016UITests</string>
-			<key>productReference</key>
-			<string>49D59EC41CB8B127005ED3FE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>49D59EC41CB8B127005ED3FE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>bitcamp2016UITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>49D59EC51CB8B127005ED3FE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>49D59E9D1CB8B126005ED3FE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>49D59EA41CB8B126005ED3FE</string>
-			<key>remoteInfo</key>
-			<string>bitcamp2016</string>
-		</dict>
-		<key>49D59EC61CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>49D59EA41CB8B126005ED3FE</string>
-			<key>targetProxy</key>
-			<string>49D59EC51CB8B127005ED3FE</string>
-		</dict>
-		<key>49D59EC71CB8B127005ED3FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49D59EC81CB8B127005ED3FE</string>
-				<string>49D59ECA1CB8B127005ED3FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>bitcamp2016UITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EC81CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>bitcamp2016UITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59EC91CB8B127005ED3FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49D59EC81CB8B127005ED3FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>49D59ECA1CB8B127005ED3FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D59ECB1CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>49D59ECC1CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>49D59ECD1CB8B127005ED3FE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>49D59ECE1CB8B127005ED3FE</string>
-				<string>49D59ECF1CB8B127005ED3FE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>49D59ECE1CB8B127005ED3FE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>76472D5549ECFC509BCD1EE4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>49D59ECF1CB8B127005ED3FE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>31C06A10D45480AD8ACD2BA2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>49D59ED01CB8B127005ED3FE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>49D59ED11CB8B127005ED3FE</string>
-				<string>49D59ED21CB8B127005ED3FE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>49D59ED11CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016Tests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016Tests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>49D59ED21CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016Tests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016Tests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>49D59ED31CB8B127005ED3FE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>49D59ED41CB8B127005ED3FE</string>
-				<string>49D59ED51CB8B127005ED3FE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>49D59ED41CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016UITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016UITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>bitcamp2016</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>49D59ED51CB8B127005ED3FE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>bitcamp2016UITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.TNAdevs.bitcamp2016UITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>bitcamp2016</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>5691E32AA6D2050E9925A9A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>663B5E466ECB4CA445BBCA1B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>663B5E466ECB4CA445BBCA1B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>76472D5549ECFC509BCD1EE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C30A0AC0C98B20BE253840DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>76472D5549ECFC509BCD1EE4</string>
-				<string>31C06A10D45480AD8ACD2BA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FBA3982B1BFBF23C03D31DCA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FF1F26209DDA3DE6FDA64939</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>49D59E9D1CB8B126005ED3FE</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F36189A360DF97BF53F4D7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663B5E466ECB4CA445BBCA1B /* Pods.framework */; };
+		3D6203A21CB8C4270006D819 /* MusicMetadataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */; };
+		3D6203A91CB8CC5B0006D819 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6203A81CB8CC5B0006D819 /* Artist.swift */; };
+		49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EA81CB8B127005ED3FE /* AppDelegate.swift */; };
+		49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EAA1CB8B127005ED3FE /* ViewController.swift */; };
+		49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EAC1CB8B127005ED3FE /* Main.storyboard */; };
+		49D59EB01CB8B127005ED3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EAF1CB8B127005ED3FE /* Assets.xcassets */; };
+		49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */; };
+		49D59EBE1CB8B127005ED3FE /* bitcamp2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */; };
+		49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49D59EBA1CB8B127005ED3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D59E9D1CB8B126005ED3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D59EA41CB8B126005ED3FE;
+			remoteInfo = bitcamp2016;
+		};
+		49D59EC51CB8B127005ED3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D59E9D1CB8B126005ED3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D59EA41CB8B126005ED3FE;
+			remoteInfo = bitcamp2016;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMetadataProvider.swift; sourceTree = "<group>"; };
+		3D6203A81CB8CC5B0006D819 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		49D59EA51CB8B126005ED3FE /* bitcamp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitcamp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EA81CB8B127005ED3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49D59EAA1CB8B127005ED3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49D59EAD1CB8B127005ED3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49D59EAF1CB8B127005ED3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D59EB21CB8B127005ED3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49D59EB41CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitcamp2016Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2016Tests.swift; sourceTree = "<group>"; };
+		49D59EBF1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitcamp2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2016UITests.swift; sourceTree = "<group>"; };
+		49D59ECA1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663B5E466ECB4CA445BBCA1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D59EA21CB8B126005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F36189A360DF97BF53F4D7 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB61CB8B127005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC11CB8B127005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6203A01CB8C4110006D819 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3D6203A71CB8CC3E0006D819 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D6203A81CB8CC5B0006D819 /* Artist.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		49D59E9C1CB8B126005ED3FE = {
+			isa = PBXGroup;
+			children = (
+				3D6203A71CB8CC3E0006D819 /* Models */,
+				3D6203A01CB8C4110006D819 /* Utilities */,
+				49D59EA71CB8B126005ED3FE /* bitcamp2016 */,
+				49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */,
+				49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */,
+				49D59EA61CB8B126005ED3FE /* Products */,
+				C30A0AC0C98B20BE253840DF /* Pods */,
+				5691E32AA6D2050E9925A9A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49D59EA61CB8B126005ED3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EA51CB8B126005ED3FE /* bitcamp2016.app */,
+				49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */,
+				49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D59EA71CB8B126005ED3FE /* bitcamp2016 */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EA81CB8B127005ED3FE /* AppDelegate.swift */,
+				49D59EAA1CB8B127005ED3FE /* ViewController.swift */,
+				49D59EAC1CB8B127005ED3FE /* Main.storyboard */,
+				49D59EAF1CB8B127005ED3FE /* Assets.xcassets */,
+				49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */,
+				49D59EB41CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016;
+			sourceTree = "<group>";
+		};
+		49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */,
+				49D59EBF1CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016Tests;
+			sourceTree = "<group>";
+		};
+		49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */,
+				49D59ECA1CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016UITests;
+			sourceTree = "<group>";
+		};
+		5691E32AA6D2050E9925A9A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663B5E466ECB4CA445BBCA1B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30A0AC0C98B20BE253840DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */,
+				31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49D59EA41CB8B126005ED3FE /* bitcamp2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ECD1CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016" */;
+			buildPhases = (
+				FF1F26209DDA3DE6FDA64939 /* Check Pods Manifest.lock */,
+				49D59EA11CB8B126005ED3FE /* Sources */,
+				49D59EA21CB8B126005ED3FE /* Frameworks */,
+				49D59EA31CB8B126005ED3FE /* Resources */,
+				FBA3982B1BFBF23C03D31DCA /* Embed Pods Frameworks */,
+				15A841A1EB44C0C8125D38A9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcamp2016;
+			productName = bitcamp2016;
+			productReference = 49D59EA51CB8B126005ED3FE /* bitcamp2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49D59EB81CB8B127005ED3FE /* bitcamp2016Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ED01CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016Tests" */;
+			buildPhases = (
+				49D59EB51CB8B127005ED3FE /* Sources */,
+				49D59EB61CB8B127005ED3FE /* Frameworks */,
+				49D59EB71CB8B127005ED3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D59EBB1CB8B127005ED3FE /* PBXTargetDependency */,
+			);
+			name = bitcamp2016Tests;
+			productName = bitcamp2016Tests;
+			productReference = 49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49D59EC31CB8B127005ED3FE /* bitcamp2016UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ED31CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016UITests" */;
+			buildPhases = (
+				49D59EC01CB8B127005ED3FE /* Sources */,
+				49D59EC11CB8B127005ED3FE /* Frameworks */,
+				49D59EC21CB8B127005ED3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D59EC61CB8B127005ED3FE /* PBXTargetDependency */,
+			);
+			name = bitcamp2016UITests;
+			productName = bitcamp2016UITests;
+			productReference = 49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D59E9D1CB8B126005ED3FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TNAdevs;
+				TargetAttributes = {
+					49D59EA41CB8B126005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+					};
+					49D59EB81CB8B127005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+						TestTargetID = 49D59EA41CB8B126005ED3FE;
+					};
+					49D59EC31CB8B127005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+						TestTargetID = 49D59EA41CB8B126005ED3FE;
+					};
+				};
+			};
+			buildConfigurationList = 49D59EA01CB8B126005ED3FE /* Build configuration list for PBXProject "bitcamp2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49D59E9C1CB8B126005ED3FE;
+			productRefGroup = 49D59EA61CB8B126005ED3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D59EA41CB8B126005ED3FE /* bitcamp2016 */,
+				49D59EB81CB8B127005ED3FE /* bitcamp2016Tests */,
+				49D59EC31CB8B127005ED3FE /* bitcamp2016UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49D59EA31CB8B126005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */,
+				49D59EB01CB8B127005ED3FE /* Assets.xcassets in Resources */,
+				49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB71CB8B127005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC21CB8B127005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A841A1EB44C0C8125D38A9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA3982B1BFBF23C03D31DCA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1F26209DDA3DE6FDA64939 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49D59EA11CB8B126005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */,
+				3D6203A21CB8C4270006D819 /* MusicMetadataProvider.swift in Sources */,
+				3D6203A91CB8CC5B0006D819 /* Artist.swift in Sources */,
+				49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB51CB8B127005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EBE1CB8B127005ED3FE /* bitcamp2016Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC01CB8B127005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D59EBB1CB8B127005ED3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D59EA41CB8B126005ED3FE /* bitcamp2016 */;
+			targetProxy = 49D59EBA1CB8B127005ED3FE /* PBXContainerItemProxy */;
+		};
+		49D59EC61CB8B127005ED3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D59EA41CB8B126005ED3FE /* bitcamp2016 */;
+			targetProxy = 49D59EC51CB8B127005ED3FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49D59EAC1CB8B127005ED3FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D59EAD1CB8B127005ED3FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D59EB21CB8B127005ED3FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49D59ECB1CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49D59ECC1CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D59ECE1CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bitcamp2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49D59ECF1CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bitcamp2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49D59ED11CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bitcamp2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016";
+			};
+			name = Debug;
+		};
+		49D59ED21CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bitcamp2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016";
+			};
+			name = Release;
+		};
+		49D59ED41CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bitcamp2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bitcamp2016;
+			};
+			name = Debug;
+		};
+		49D59ED51CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bitcamp2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bitcamp2016;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49D59EA01CB8B126005ED3FE /* Build configuration list for PBXProject "bitcamp2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ECB1CB8B127005ED3FE /* Debug */,
+				49D59ECC1CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D59ECD1CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ECE1CB8B127005ED3FE /* Debug */,
+				49D59ECF1CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D59ED01CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ED11CB8B127005ED3FE /* Debug */,
+				49D59ED21CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D59ED31CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ED41CB8B127005ED3FE /* Debug */,
+				49D59ED51CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D59E9D1CB8B126005ED3FE /* Project object */;
+}
