@@ -14,6 +14,8 @@
 		49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */; };
 		49D59EBE1CB8B127005ED3FE /* bitcamp2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */; };
 		49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */; };
+		49D59EDA1CB8BC40005ED3FE /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */; };
+		49D59EDF1CB8BFD9005ED3FE /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitcamp2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2016UITests.swift; sourceTree = "<group>"; };
 		49D59ECA1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewCell.swift; path = bitcamp2016/AlbumViewCell.swift; sourceTree = "<group>"; };
+		49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		49D59E9C1CB8B126005ED3FE = {
 			isa = PBXGroup;
 			children = (
+				49D59ED61CB8BBF3005ED3FE /* Models */,
 				49D59EA71CB8B126005ED3FE /* bitcamp2016 */,
 				49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */,
 				49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */,
@@ -99,6 +104,7 @@
 			children = (
 				49D59EA81CB8B127005ED3FE /* AppDelegate.swift */,
 				49D59EAA1CB8B127005ED3FE /* ViewController.swift */,
+				49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */,
 				49D59EAC1CB8B127005ED3FE /* Main.storyboard */,
 				49D59EAF1CB8B127005ED3FE /* Assets.xcassets */,
 				49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */,
@@ -123,6 +129,14 @@
 				49D59ECA1CB8B127005ED3FE /* Info.plist */,
 			);
 			path = bitcamp2016UITests;
+			sourceTree = "<group>";
+		};
+		49D59ED61CB8BBF3005ED3FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D59EDF1CB8BFD9005ED3FE /* AlbumViewController.swift in Sources */,
 				49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */,
 				49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */,
+				49D59EDA1CB8BC40005ED3FE /* AlbumViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +501,7 @@
 				49D59ECF1CB8B127005ED3FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49D59ED01CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016Tests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +510,7 @@
 				49D59ED21CB8B127005ED3FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49D59ED31CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016UITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				49D59ED51CB8B127005ED3FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
