@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EA81CB8B127005ED3FE /* AppDelegate.swift */; };
+		49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EAA1CB8B127005ED3FE /* ViewController.swift */; };
+		49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EAC1CB8B127005ED3FE /* Main.storyboard */; };
+		49D59EB01CB8B127005ED3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EAF1CB8B127005ED3FE /* Assets.xcassets */; };
+		49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */; };
+		49D59EBE1CB8B127005ED3FE /* bitcamp2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */; };
+		49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49D59EBA1CB8B127005ED3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D59E9D1CB8B126005ED3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D59EA41CB8B126005ED3FE;
+			remoteInfo = bitcamp2016;
+		};
+		49D59EC51CB8B127005ED3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D59E9D1CB8B126005ED3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D59EA41CB8B126005ED3FE;
+			remoteInfo = bitcamp2016;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49D59EA51CB8B126005ED3FE /* bitcamp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitcamp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EA81CB8B127005ED3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49D59EAA1CB8B127005ED3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49D59EAD1CB8B127005ED3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49D59EAF1CB8B127005ED3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D59EB21CB8B127005ED3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49D59EB41CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitcamp2016Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2016Tests.swift; sourceTree = "<group>"; };
+		49D59EBF1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitcamp2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2016UITests.swift; sourceTree = "<group>"; };
+		49D59ECA1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D59EA21CB8B126005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB61CB8B127005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC11CB8B127005ED3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D59E9C1CB8B126005ED3FE = {
+			isa = PBXGroup;
+			children = (
+				49D59EA71CB8B126005ED3FE /* bitcamp2016 */,
+				49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */,
+				49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */,
+				49D59EA61CB8B126005ED3FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49D59EA61CB8B126005ED3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EA51CB8B126005ED3FE /* bitcamp2016.app */,
+				49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */,
+				49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D59EA71CB8B126005ED3FE /* bitcamp2016 */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EA81CB8B127005ED3FE /* AppDelegate.swift */,
+				49D59EAA1CB8B127005ED3FE /* ViewController.swift */,
+				49D59EAC1CB8B127005ED3FE /* Main.storyboard */,
+				49D59EAF1CB8B127005ED3FE /* Assets.xcassets */,
+				49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */,
+				49D59EB41CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016;
+			sourceTree = "<group>";
+		};
+		49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EBD1CB8B127005ED3FE /* bitcamp2016Tests.swift */,
+				49D59EBF1CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016Tests;
+			sourceTree = "<group>";
+		};
+		49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */,
+				49D59ECA1CB8B127005ED3FE /* Info.plist */,
+			);
+			path = bitcamp2016UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49D59EA41CB8B126005ED3FE /* bitcamp2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ECD1CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016" */;
+			buildPhases = (
+				49D59EA11CB8B126005ED3FE /* Sources */,
+				49D59EA21CB8B126005ED3FE /* Frameworks */,
+				49D59EA31CB8B126005ED3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bitcamp2016;
+			productName = bitcamp2016;
+			productReference = 49D59EA51CB8B126005ED3FE /* bitcamp2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49D59EB81CB8B127005ED3FE /* bitcamp2016Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ED01CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016Tests" */;
+			buildPhases = (
+				49D59EB51CB8B127005ED3FE /* Sources */,
+				49D59EB61CB8B127005ED3FE /* Frameworks */,
+				49D59EB71CB8B127005ED3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D59EBB1CB8B127005ED3FE /* PBXTargetDependency */,
+			);
+			name = bitcamp2016Tests;
+			productName = bitcamp2016Tests;
+			productReference = 49D59EB91CB8B127005ED3FE /* bitcamp2016Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49D59EC31CB8B127005ED3FE /* bitcamp2016UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D59ED31CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016UITests" */;
+			buildPhases = (
+				49D59EC01CB8B127005ED3FE /* Sources */,
+				49D59EC11CB8B127005ED3FE /* Frameworks */,
+				49D59EC21CB8B127005ED3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D59EC61CB8B127005ED3FE /* PBXTargetDependency */,
+			);
+			name = bitcamp2016UITests;
+			productName = bitcamp2016UITests;
+			productReference = 49D59EC41CB8B127005ED3FE /* bitcamp2016UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D59E9D1CB8B126005ED3FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TNAdevs;
+				TargetAttributes = {
+					49D59EA41CB8B126005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+					};
+					49D59EB81CB8B127005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+						TestTargetID = 49D59EA41CB8B126005ED3FE;
+					};
+					49D59EC31CB8B127005ED3FE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 969D6T2MXS;
+						TestTargetID = 49D59EA41CB8B126005ED3FE;
+					};
+				};
+			};
+			buildConfigurationList = 49D59EA01CB8B126005ED3FE /* Build configuration list for PBXProject "bitcamp2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49D59E9C1CB8B126005ED3FE;
+			productRefGroup = 49D59EA61CB8B126005ED3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D59EA41CB8B126005ED3FE /* bitcamp2016 */,
+				49D59EB81CB8B127005ED3FE /* bitcamp2016Tests */,
+				49D59EC31CB8B127005ED3FE /* bitcamp2016UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49D59EA31CB8B126005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */,
+				49D59EB01CB8B127005ED3FE /* Assets.xcassets in Resources */,
+				49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB71CB8B127005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC21CB8B127005ED3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49D59EA11CB8B126005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */,
+				49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EB51CB8B127005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EBE1CB8B127005ED3FE /* bitcamp2016Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D59EC01CB8B127005ED3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D59EBB1CB8B127005ED3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D59EA41CB8B126005ED3FE /* bitcamp2016 */;
+			targetProxy = 49D59EBA1CB8B127005ED3FE /* PBXContainerItemProxy */;
+		};
+		49D59EC61CB8B127005ED3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D59EA41CB8B126005ED3FE /* bitcamp2016 */;
+			targetProxy = 49D59EC51CB8B127005ED3FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49D59EAC1CB8B127005ED3FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D59EAD1CB8B127005ED3FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D59EB21CB8B127005ED3FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49D59ECB1CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49D59ECC1CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D59ECE1CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bitcamp2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49D59ECF1CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bitcamp2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49D59ED11CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bitcamp2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016";
+			};
+			name = Debug;
+		};
+		49D59ED21CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bitcamp2016Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2016.app/bitcamp2016";
+			};
+			name = Release;
+		};
+		49D59ED41CB8B127005ED3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bitcamp2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bitcamp2016;
+			};
+			name = Debug;
+		};
+		49D59ED51CB8B127005ED3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bitcamp2016UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bitcamp2016;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49D59EA01CB8B126005ED3FE /* Build configuration list for PBXProject "bitcamp2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ECB1CB8B127005ED3FE /* Debug */,
+				49D59ECC1CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D59ECD1CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ECE1CB8B127005ED3FE /* Debug */,
+				49D59ECF1CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49D59ED01CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ED11CB8B127005ED3FE /* Debug */,
+				49D59ED21CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49D59ED31CB8B127005ED3FE /* Build configuration list for PBXNativeTarget "bitcamp2016UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D59ED41CB8B127005ED3FE /* Debug */,
+				49D59ED51CB8B127005ED3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D59E9D1CB8B126005ED3FE /* Project object */;
+}
