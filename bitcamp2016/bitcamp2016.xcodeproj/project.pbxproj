@@ -10,6 +10,7 @@
 		12F36189A360DF97BF53F4D7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663B5E466ECB4CA445BBCA1B /* Pods.framework */; };
 		3D6203A21CB8C4270006D819 /* MusicMetadataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */; };
 		3D6203A91CB8CC5B0006D819 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6203A81CB8CC5B0006D819 /* Artist.swift */; };
+		3D9B236C1CB97ECA001FBD34 /* default_album_art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D9B236B1CB97ECA001FBD34 /* default_album_art.jpg */; };
 		49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EA81CB8B127005ED3FE /* AppDelegate.swift */; };
 		49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EAA1CB8B127005ED3FE /* ViewController.swift */; };
 		49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D59EAC1CB8B127005ED3FE /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMetadataProvider.swift; sourceTree = "<group>"; };
 		3D6203A81CB8CC5B0006D819 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		3D9B236B1CB97ECA001FBD34 /* default_album_art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_album_art.jpg; sourceTree = "<group>"; };
 		49D59EA51CB8B126005ED3FE /* bitcamp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitcamp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D59EA81CB8B127005ED3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49D59EAA1CB8B127005ED3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,9 +89,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6203A01CB8C4110006D819 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3D6203A71CB8CC3E0006D819 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D6203A81CB8CC5B0006D819 /* Artist.swift */,
+				49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3D9B236A1CB97EA1001FBD34 /* Default Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D9B236B1CB97ECA001FBD34 /* default_album_art.jpg */,
+			);
+			name = "Default Images";
+			sourceTree = "<group>";
+		};
 		49D59E9C1CB8B126005ED3FE = {
 			isa = PBXGroup;
 			children = (
+				3D9B236A1CB97EA1001FBD34 /* Default Images */,
 				3D6203A71CB8CC3E0006D819 /* Models */,
 				3D6203A01CB8C4110006D819 /* Utilities */,
 				49D59EA71CB8B126005ED3FE /* bitcamp2016 */,
@@ -101,23 +129,6 @@
 			);
 			sourceTree = "<group>";
 		};
-        3D6203A01CB8C4110006D819 /* Utilities */ = {
-            isa = PBXGroup;
-            children = (
-                3D6203A11CB8C4270006D819 /* MusicMetadataProvider.swift */,
-            );
-            name = Utilities;
-            sourceTree = "<group>";
-        };
-        3D6203A71CB8CC3E0006D819 /* Models */ = {
-            isa = PBXGroup;
-            children = (
-                3D6203A81CB8CC5B0006D819 /* Artist.swift */,
-                49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */,
-            );
-            name = Models;
-            sourceTree = "<group>";
-        };
 		49D59EA61CB8B126005ED3FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +259,7 @@
 				TargetAttributes = {
 					49D59EA41CB8B126005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 969D6T2MXS;
+						DevelopmentTeam = MF67FDSFWV;
 					};
 					49D59EB81CB8B127005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
@@ -290,6 +301,7 @@
 				49D59EB31CB8B127005ED3FE /* LaunchScreen.storyboard in Resources */,
 				49D59EB01CB8B127005ED3FE /* Assets.xcassets in Resources */,
 				49D59EAE1CB8B127005ED3FE /* Main.storyboard in Resources */,
+				3D9B236C1CB97ECA001FBD34 /* default_album_art.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,10 +522,13 @@
 			baseConfigurationReference = 76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -522,10 +537,13 @@
 			baseConfigurationReference = 31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -15,12 +15,12 @@ import SWXMLHash
  * obtain music metadata based on provided filters.
  */
 class MusicMetadataProvider: NSObject {
-    
+        
     /**
      * Retrieve data about artists that were born
      * in the current local area.
      */
-    func getLocalArtistData(tableViewController: UITableViewController) {
+    func getLocalArtistData(tableViewController: AlbumViewController) {
         let dataUrl = NSURL(string: "http://musicbrainz.org/ws/2/artist/?query=beginarea:dc&type:group&type:person")
         
         // used to store the artist data
@@ -43,13 +43,12 @@ class MusicMetadataProvider: NSObject {
                         newArtist = Artist(name: artist["name"].element?.text, beginningArea: artist["begin-area"]["name"].element?.text, type: artist.element?.attributes["type"], albumCovers: nil, artistDescription: nil)
                         artistData?.append(newArtist)
                     }
+
+                    // reset artist data list
+                    tableViewController.artistDataList = artistData!
                     
-                    // update table view contents
-                    //tableViewController.artistData = artistData
-                    dispatch_async(dispatch_get_main_queue()) {
-                        tableViewController.tableView.reloadData()
-                        tableViewController.tableView.setContentOffset(CGPointZero, animated: false)
-                    }
+                    // tell view controller to reload table data
+                    NSNotificationCenter.defaultCenter().postNotificationName("reloadArtistData", object: nil)
                 }
             }
 

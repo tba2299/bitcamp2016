@@ -13,7 +13,6 @@ class AlbumViewCell: UITableViewCell {
     
     @IBOutlet weak var albumCover: UIImageView!
     @IBOutlet weak var bandName: UILabel!
-    @IBOutlet weak var bandDescription: UILabel!
     
 }
 

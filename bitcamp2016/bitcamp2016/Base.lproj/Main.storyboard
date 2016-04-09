@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nIG-HV-hz5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,39 +26,67 @@
         <!--Album View Controller-->
         <scene sceneID="pQF-HD-bjt">
             <objects>
-                <tableViewController id="nIG-HV-hz5" customClass="AlbumViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="253" sectionHeaderHeight="28" sectionFooterHeight="28" id="CoG-O0-pdA">
+                <tableViewController id="nIG-HV-hz5" customClass="AlbumViewController" customModule="bitcamp2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="275" sectionHeaderHeight="28" sectionFooterHeight="28" id="CoG-O0-pdA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="253" id="hCI-oH-G62" customClass="AlbumViewCell" customModule="bitcamp2016" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="253"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="artistCell" rowHeight="275" id="hCI-oH-G62" customClass="AlbumViewCell" customModule="bitcamp2016" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="275"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hCI-oH-G62" id="YQK-O9-5kp">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="252"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="274"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-HT-wdC">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-HT-wdC">
                                             <rect key="frame" x="159" y="8" width="282" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="4IL-rk-x5O"/>
+                                                <constraint firstAttribute="width" constant="282" id="qFR-Ub-BB9"/>
+                                                <constraint firstAttribute="width" constant="282" id="u4P-W3-Ysu"/>
+                                                <constraint firstAttribute="height" constant="180" id="yLj-p3-ac3"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="4IL-rk-x5O"/>
+                                                    <exclude reference="qFR-Ub-BB9"/>
+                                                    <exclude reference="yLj-p3-ac3"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywE-E1-x0T">
-                                            <rect key="frame" x="159" y="196" width="282" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzl-hW-r5j">
-                                            <rect key="frame" x="159" y="225" width="282" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywE-E1-x0T">
+                                            <rect key="frame" x="159" y="214" width="282" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="centerX" secondItem="YQK-O9-5kp" secondAttribute="centerX" id="3gD-Xu-4fG"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="centerY" secondItem="YQK-O9-5kp" secondAttribute="centerY" id="8n9-7D-uWR"/>
+                                        <constraint firstItem="ywE-E1-x0T" firstAttribute="top" secondItem="eq7-HT-wdC" secondAttribute="bottom" constant="8" id="GxG-0l-ujt"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="top" secondItem="YQK-O9-5kp" secondAttribute="topMargin" id="Kki-Fh-Fgm"/>
+                                        <constraint firstItem="ywE-E1-x0T" firstAttribute="centerX" secondItem="YQK-O9-5kp" secondAttribute="centerX" id="O22-fn-ttM"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ywE-E1-x0T" secondAttribute="bottom" constant="31" id="T4R-md-mLn"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="leading" secondItem="ywE-E1-x0T" secondAttribute="leading" id="ToX-TX-WWe"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="trailing" secondItem="ywE-E1-x0T" secondAttribute="trailing" id="YMs-R6-Y0K"/>
+                                        <constraint firstItem="ywE-E1-x0T" firstAttribute="top" secondItem="eq7-HT-wdC" secondAttribute="bottom" constant="26" id="hu7-Qf-grx"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="top" secondItem="YQK-O9-5kp" secondAttribute="topMargin" id="icG-ag-mjq"/>
+                                        <constraint firstItem="eq7-HT-wdC" firstAttribute="centerX" secondItem="YQK-O9-5kp" secondAttribute="centerX" id="q3k-aC-YkT"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="8n9-7D-uWR"/>
+                                            <exclude reference="Kki-Fh-Fgm"/>
+                                            <exclude reference="q3k-aC-YkT"/>
+                                            <exclude reference="GxG-0l-ujt"/>
+                                            <exclude reference="O22-fn-ttM"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="albumCover" destination="eq7-HT-wdC" id="F0o-ab-LD3"/>
-                                    <outlet property="bandDescription" destination="fzl-hW-r5j" id="LOO-yb-As4"/>
                                     <outlet property="bandName" destination="ywE-E1-x0T" id="dTu-QZ-xcC"/>
                                 </connections>
                             </tableViewCell>
@@ -70,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOw-Gq-oOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="400"/>
+            <point key="canvasLocation" x="1286" y="326"/>
         </scene>
     </scenes>
 </document>

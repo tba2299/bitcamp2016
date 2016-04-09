@@ -8,6 +8,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'SWXMLHash', '~> 2.1.0'
+pod 'SwiftSpinner'
+pod 'PullToRefresher', '~> 1.0'
 
 target 'bitcamp2016' do
 

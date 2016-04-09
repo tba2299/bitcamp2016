@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-bitcamp2016/PullToRefresh.framework"
   install_framework "Pods-bitcamp2016/SWXMLHash.framework"
+  install_framework "Pods-bitcamp2016/SwiftSpinner.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-bitcamp2016/PullToRefresh.framework"
   install_framework "Pods-bitcamp2016/SWXMLHash.framework"
+  install_framework "Pods-bitcamp2016/SwiftSpinner.framework"
 fi

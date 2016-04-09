@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A3A593BC7B7CB9DDEE9E55CD'
+               BlueprintIdentifier = '0E0228C57724496BF406EAA4'
                BlueprintName = 'Pods-bitcamp2016'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_bitcamp2016.framework'>

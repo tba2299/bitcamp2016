@@ -24,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PullToRefresher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWXMLHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50C77569A8988B8E63663AC59BF9C31C</key>
+		<key>7A9A6E665745D99438B0AF3250D74CF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF910F914F28F990E362547997A122DC</key>
+		<key>86325BA2475E49AB7A45B1EBA849F6E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8AC41665AF5D017F56C903B9F025BC4</key>
+		<key>8BAFB482ECD745928DE9B1A027915A23</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA8F20ABCF9DF446885917B27CA75E55</key>
+		<key>8DF23D7D1EE7A1866DF06C03917A8FCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA1D0852009DA012BD48CD1041A1696F</key>
+		<key>94454F0ABD11475099D8BDE97C0897F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2427624E21ADA4B780572EBE8F88850</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC7A2301EACCF30A8F24ECF0DA9F5B5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
