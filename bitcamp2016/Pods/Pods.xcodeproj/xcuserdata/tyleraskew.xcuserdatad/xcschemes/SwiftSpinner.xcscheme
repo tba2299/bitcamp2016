@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3201087FBDD381C94DA5E800'
-               BlueprintName = 'Pods-bitcamp2016'
+               BlueprintIdentifier = 'A88FF69DB8C4A0822C93A5E5'
+               BlueprintName = 'SwiftSpinner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_bitcamp2016.framework'>
+               BuildableName = 'SwiftSpinner.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import CoreLocation
+import SwiftSpinner
+import PullToRefresh
 
 class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     // Init Location Manager
@@ -20,26 +22,85 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     // Variable to store any errors with location
     private var locationError: NSError?
     
-    // Store Album entries: value will be AlbumModel
-    //let albumDictionary: [String: AlbumModel]?
+    // list of artists within current area
+    var artistDataList: [Artist] = []
     
+    // music metadata provider
+    let musicMetadataProvider: MusicMetadataProvider = MusicMetadataProvider()
+    
+    // pull to refresh handler
+    let pullToRefresher = PullToRefresh()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        // set up notification so this view controller can be notified of data changes
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadArtistData", object: nil)
+    
+        // set container view for spinner
+        SwiftSpinner.useContainerView(self.view)
+        
+        // request for location updates
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
+        // set up pull to refresh
+        self.tableView.addPullToRefresh(self.pullToRefresher, action: {
+            self.tableView.endRefreshing()
+            SwiftSpinner.show("fetching artists...")
+            self.musicMetadataProvider.getLocalArtistData(self)
+        })
     }
     
-    /*override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let albumCell = tableView.dequeueReusableCellWithIdentifier("AlbumViewCell")
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        return albumCell
+        // inform user of artist fetching
+        SwiftSpinner.show("fetching artists...")
         
-    }*/
+        // populate the artist data list with local artist information
+        self.musicMetadataProvider.getLocalArtistData(self)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return artistDataList.count
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let albumCell = tableView.dequeueReusableCellWithIdentifier("AlbumViewCell", forIndexPath: indexPath)
+        let currentArtistCell = tableView.dequeueReusableCellWithIdentifier("artistCell", forIndexPath: indexPath) as! AlbumViewCell
         
-        return albumCell
-
+        // set album cell fields
+        currentArtistCell.albumCover.image = UIImage(named: "default_album_art.jpg")   // change to actual album cover
+        currentArtistCell.bandName!.text = self.artistDataList[indexPath.item].name
+                
+        return currentArtistCell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 180
+    }
+    
+    /**
+     * Used to reload table data from a notification.
+     */
+    func reloadTableData(notification: NSNotification?) {
+        self.tableView.reloadData()
+        SwiftSpinner.hide()
+        
+        // print city info
+        ReverseGeocoder.getNearbyCityNames(currentLocation)
     }
     
     

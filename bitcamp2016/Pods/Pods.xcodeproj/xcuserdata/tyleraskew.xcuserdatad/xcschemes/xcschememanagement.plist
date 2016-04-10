@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-bitcamp2016.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PullToRefresher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWXMLHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50C77569A8988B8E63663AC59BF9C31C</key>
+		<key>0ACFDAEED0F1A41A002ADAFD24591041</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF910F914F28F990E362547997A122DC</key>
+		<key>14B4175BF560655F8306F471D34211F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8AC41665AF5D017F56C903B9F025BC4</key>
+		<key>15F18880181C4A8F84385AF830F1F7AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA8F20ABCF9DF446885917B27CA75E55</key>
+		<key>47B335CBCBD03A76F2EFDAF7BB5E8AE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA1D0852009DA012BD48CD1041A1696F</key>
+		<key>61AE6FB66F691DFF7B2B2DAA045DE386</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98BEB7F828F61B0D051998B3DF54BE16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB6968BAFD4CF2FD1DEE514AD767D504</key>
 		<dict>
 			<key>primary</key>
 			<true/>

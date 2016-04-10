@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3201087FBDD381C94DA5E800'
-               BlueprintName = 'Pods-bitcamp2016'
+               BlueprintIdentifier = '93B43830B62B5B20F1C84C56'
+               BlueprintName = 'PullToRefresher'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_bitcamp2016.framework'>
+               BuildableName = 'PullToRefresh.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

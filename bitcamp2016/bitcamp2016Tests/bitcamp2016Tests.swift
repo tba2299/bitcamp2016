@@ -22,8 +22,9 @@ class bitcamp2016Tests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let provider = MusicMetadataProvider()
+        provider.getLocalArtistData()
+        sleep(5) // allow artist data to get retrieved
     }
     
     func testPerformanceExample() {
