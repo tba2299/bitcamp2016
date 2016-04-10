@@ -20,8 +20,9 @@ class MusicMetadataProvider: NSObject {
      * Retrieve data about artists that were born
      * in the current local area.
      */
-    func getLocalArtistData(tableViewController: AlbumViewController) {
-        let dataUrl = NSURL(string: "http://musicbrainz.org/ws/2/artist/?query=beginarea:dc&type:group&type:person")
+    static func getLocalArtistData(tableViewController: AlbumViewController, cityName: String) {
+        let urlString = "http://musicbrainz.org/ws/2/artist/?query=beginarea:\(cityName)&type:group&type:person"
+        let dataUrl = NSURL(string: urlString)
         
         // used to store the artist data
         var artistData: [Artist]? = [Artist]()

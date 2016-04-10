@@ -12,24 +12,23 @@ import CoreLocation
 import SwiftSpinner
 import PullToRefresh
 
-class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
+class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UISearchResultsUpdating {
     // Init Location Manager
     let locationManager = CLLocationManager()
     
     // Variable to store the current location
-    private var currentLocation: CLLocation!
+    var currentLocation: CLLocation!
     
     // Variable to store any errors with location
     private var locationError: NSError?
     
     // list of artists within current area
     var artistDataList: [Artist] = []
+
+    private var filteredArtistDataList: [Artist] = []
     
-    // AlbumArt Dict
-    var albumArt = [String: UIImage]()
-    
-    // music metadata provider
-    let musicMetadataProvider: MusicMetadataProvider = MusicMetadataProvider()
+    // search controller
+    let searchListController = UISearchController(searchResultsController: nil)
     
     // pull to refresh handler
     let pullToRefresher = PullToRefresh()
@@ -50,13 +49,24 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+            self.currentLocation = locationManager.location
         }
+        
+        // set up search controller
+        searchListController.searchResultsUpdater = self
+        searchListController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchListController.searchBar
+        
+        // used to close search on tap
+        let closeSearch = UITapGestureRecognizer(target: self, action: "dismissSearch")
+        self.tableView.addGestureRecognizer(closeSearch)
         
         // set up pull to refresh
         self.tableView.addPullToRefresh(self.pullToRefresher, action: {
             self.tableView.endRefreshing()
             SwiftSpinner.show("fetching artists...")
-            self.musicMetadataProvider.getLocalArtistData(self)
+            ReverseGeocoder.getNearbyCityNames(self)
         })
     }
     
@@ -67,30 +77,41 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         SwiftSpinner.show("fetching artists...")
         
         // populate the artist data list with local artist information
-        self.musicMetadataProvider.getLocalArtistData(self)
+        ReverseGeocoder.getNearbyCityNames(self)
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    // call filter function when user puts in search bar text
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterArtistListBySearch(searchController.searchBar.text!)
+    }
+    
+    func dismissSearch() {
+        self.searchListController.view.endEditing(true)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchListController.active && searchListController.searchBar.text != "" {
+            return filteredArtistDataList.count
+        }
+        
         return artistDataList.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let currentArtistCell = tableView.dequeueReusableCellWithIdentifier("artistCell", forIndexPath: indexPath) as! AlbumViewCell
+        var artist: Artist
+        
+        // determine if filtered or not
+        if searchListController.active && searchListController.searchBar.text != "" {
+            artist = filteredArtistDataList[indexPath.row]
+        } else {
+            artist = artistDataList[indexPath.row]
+        }
         
         // set album cell fields
-        currentArtistCell.bandName!.text = self.artistDataList[indexPath.item].name
-        debugPrint(self.artistDataList[indexPath.item].name!)
-        /*let albumImg = SpotifyManager().getArtistAlbumArtSpotifyUri(self.artistDataList[indexPath.item].name!)
-        debugPrint(albumImg)*/
- 
-        
-        currentArtistCell.albumCover.image = self.artistDataList[indexPath.item].albumCovers?[0] //SpotifyManager().getArtistAlbumArtSpotifyUri(self.artistDataList[indexPath.item].name!)
-        
-        //currentArtistCell.albumCover.image = albumArt[self.artistDataList[indexPath.item].name!]
+        currentArtistCell.albumCover.image = artist.albumCovers![0]
+        currentArtistCell.bandName!.text = artist.name
+                
         return currentArtistCell
     }
     
@@ -108,9 +129,6 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     func reloadTableData(notification: NSNotification?) {
         self.tableView.reloadData()
         SwiftSpinner.hide()
-        
-        // print city info
-        ReverseGeocoder.getNearbyCityNames(currentLocation)
     }
     
     /**
@@ -120,6 +138,14 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         
     }
     
+    // used to filter the artist list
+    func filterArtistListBySearch(searchText: String, scope: String = "All") {
+        filteredArtistDataList = artistDataList.filter { artist in
+            return artist.name!.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        
+        tableView.reloadData()
+    }
     
     /**************************************** LOCATION DELEGATE METHODS ******************************************/
     
