@@ -1,14 +1,17 @@
 PODS:
+  - Alamofire (3.3.1)
   - PullToRefresher (1.3.1)
   - SwiftSpinner (0.9.5)
   - SWXMLHash (2.1.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.3)
   - PullToRefresher (~> 1.0)
   - SwiftSpinner
   - SWXMLHash (~> 2.1.0)
 
 SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   PullToRefresher: e17cc032b48148824a77fbf4bce5beb81933071a
   SwiftSpinner: c6585a0ae5c67eb33e737695cce88f0262008cce
   SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f

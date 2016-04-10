@@ -40,6 +40,14 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
         
+        // request for location updates
+        self.locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
         // set up pull to refresh
         self.tableView.addPullToRefresh(self.pullToRefresher, action: {
             self.tableView.endRefreshing()
@@ -90,6 +98,9 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     func reloadTableData(notification: NSNotification?) {
         self.tableView.reloadData()
         SwiftSpinner.hide()
+        
+        // print city info
+        ReverseGeocoder.getNearbyCityNames(currentLocation)
     }
     
     
