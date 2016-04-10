@@ -141,7 +141,6 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         if let selectedCell = tableView.cellForRowAtIndexPath(indexPath) {
             self.selectedCell = selectedCell
             debugPrint("inside did select \(selectedArtist)")
-            performSegueWithIdentifier("goToSongList", sender: selectedCell)
         }
     }
     

@@ -163,7 +163,7 @@
                                 <connections>
                                     <outlet property="albumCover" destination="eq7-HT-wdC" id="F0o-ab-LD3"/>
                                     <outlet property="bandName" destination="ywE-E1-x0T" id="dTu-QZ-xcC"/>
-                                    <segue destination="5cx-2Q-oq0" kind="showDetail" identifier="goToSongList" action="showViewController:sender:" id="HfY-4I-dXa"/>
+                                    <segue destination="5cx-2Q-oq0" kind="show" identifier="goToSongList" id="HfY-4I-dXa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
