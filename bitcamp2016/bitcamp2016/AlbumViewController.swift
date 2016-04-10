@@ -33,14 +33,21 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
     // pull to refresh handler
     let pullToRefresher = PullToRefresh()
     
+    var selectedArtist: String?
+    
+    var selectedCell: UITableViewCell?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
         // set up notification so this view controller can be notified of data changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadArtistData", object: nil)
-
+        
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
+        
+        // Enable user interaction
+        view.userInteractionEnabled = true
         
         // request for location updates
         self.locationManager.requestWhenInUseAuthorization()
@@ -59,7 +66,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         
         // used to close search on tap
         let closeSearch = UITapGestureRecognizer(target: self, action: "dismissSearch")
-        self.tableView.addGestureRecognizer(closeSearch)
+        //self.tableView.addGestureRecognizer(closeSearch)
         
         // set up pull to refresh
         self.tableView.addPullToRefresh(self.pullToRefresher, action: {
@@ -122,6 +129,14 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         return 180
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let selectedCell = tableView.cellForRowAtIndexPath(indexPath) {
+            self.selectedCell = selectedCell
+            debugPrint("inside did select \(selectedArtist)")
+            performSegueWithIdentifier("goToSongList", sender: selectedCell)
+        }
+    }
+    
     /**
      * Used to reload table data from a notification.
      */
@@ -137,6 +152,16 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         }
         
         tableView.reloadData()
+    }
+    
+    /* Overriding to pass artist data to vericationVC */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "goToSongList" { // Idenitify Segue
+            let segueViewController = segue.destinationViewController as! SongViewController
+            debugPrint("inside prepare \(selectedArtist)")
+            let selectedCell = sender as! AlbumViewCell
+            segueViewController.artist = selectedCell.bandName.text!
+        }
     }
     
     /**************************************** LOCATION DELEGATE METHODS ******************************************/
