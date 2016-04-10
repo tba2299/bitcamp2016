@@ -25,6 +25,9 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     // list of artists within current area
     var artistDataList: [Artist] = []
     
+    // AlbumArt Dict
+    var albumArt = [String: UIImage]()
+    
     // music metadata provider
     let musicMetadataProvider: MusicMetadataProvider = MusicMetadataProvider()
     
@@ -36,7 +39,8 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
                 
         // set up notification so this view controller can be notified of data changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadArtistData", object: nil)
-    
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "fetchAlbumCovers:", name: "fetchCovers", object: nil)
+
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
         
@@ -78,9 +82,15 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         let currentArtistCell = tableView.dequeueReusableCellWithIdentifier("artistCell", forIndexPath: indexPath) as! AlbumViewCell
         
         // set album cell fields
-        currentArtistCell.albumCover.image = UIImage(named: "default_album_art.jpg")   // change to actual album cover
         currentArtistCell.bandName!.text = self.artistDataList[indexPath.item].name
-                
+        debugPrint(self.artistDataList[indexPath.item].name!)
+        /*let albumImg = SpotifyManager().getArtistAlbumArtSpotifyUri(self.artistDataList[indexPath.item].name!)
+        debugPrint(albumImg)*/
+ 
+        
+        currentArtistCell.albumCover.image = self.artistDataList[indexPath.item].albumCovers?[0] //SpotifyManager().getArtistAlbumArtSpotifyUri(self.artistDataList[indexPath.item].name!)
+        
+        //currentArtistCell.albumCover.image = albumArt[self.artistDataList[indexPath.item].name!]
         return currentArtistCell
     }
     
@@ -101,6 +111,13 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         
         // print city info
         ReverseGeocoder.getNearbyCityNames(currentLocation)
+    }
+    
+    /**
+     * Used to fetch album covers.
+     */
+    func fetchAlbumCovers(notification: NSNotification?) {
+        
     }
     
     

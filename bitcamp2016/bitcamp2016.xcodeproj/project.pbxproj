@@ -189,23 +189,6 @@
 			path = bitcamp2016UITests;
 			sourceTree = "<group>";
 		};
-		5691E32AA6D2050E9925A9A6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				663B5E466ECB4CA445BBCA1B /* Pods.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C30A0AC0C98B20BE253840DF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */,
-				31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		49D59EE01CB8D01A005ED3FE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +205,23 @@
 				49D59EE71CB8D1CC005ED3FE /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5691E32AA6D2050E9925A9A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663B5E466ECB4CA445BBCA1B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30A0AC0C98B20BE253840DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */,
+				31C06A10D45480AD8ACD2BA2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +295,7 @@
 				TargetAttributes = {
 					49D59EA41CB8B126005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MF67FDSFWV;
+						DevelopmentTeam = 969D6T2MXS;
 					};
 					49D59EB81CB8B127005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
