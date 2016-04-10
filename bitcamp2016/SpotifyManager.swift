@@ -10,34 +10,68 @@ import Foundation
 
 
 class SpotifyManager {
+    var artistCount = 0
     
-    func getArtistAlbumArtSpotifyUri(artist: String) -> UIImage? {
-        var artistUri = NSURL()
-        var albumImage: UIImage?
+    func getArtistAlbumArtSpotifyUri(artist: Artist) {
         
         // Search for given artist with spotify api
-        SPTSearch.performSearchWithQuery(artist, queryType: SPTSearchQueryType.QueryTypeArtist, accessToken: nil, callback: {
-            (error: NSError!, response: AnyObject!) -> Void in
-            
+        SPTSearch.performSearchWithQuery(artist.name!, queryType: SPTSearchQueryType.QueryTypeArtist, accessToken: nil, callback: {
+            (error: NSError?, response: AnyObject!) -> Void in
+
                 if error == nil {
                     let listPage = response as! SPTListPage
-                    let artistObj = listPage.items[0] as! SPTPartialArtist
+                    var artistObj: SPTPartialArtist
                     
-                    artistUri = artistObj.uri
+                    if listPage.items != nil && listPage.items.count > 0 {
+                        artistObj = listPage.items[0] as! SPTPartialArtist
+                        let artistUri = artistObj.uri
+                        
+                        SPTArtist.artistsWithURIs([artistUri], accessToken: nil, callback: {
+                            (error: NSError?, response: AnyObject!) -> Void in
+                            
+                            if error == nil {
+                                let sptArtist = response as! [SPTArtist]
+                                if sptArtist.count > 0 {
+                                    var imageData: NSData? = nil
+                                    
+                                    if sptArtist[0].largestImage != nil && sptArtist[0].largestImage.imageURL != nil {
+                                        let imageUrl = sptArtist[0].largestImage.imageURL
+                                        imageData = NSData(contentsOfURL: imageUrl)
+                                    }
+                                    
+                                    if imageData != nil {
+                                        let albumImage = UIImage(data: imageData!)
+                                        artist.albumCover = (albumImage != nil) ? albumImage : artist.albumCover
+                                    }
+                                }
+                            }
+                        })
+                    }
                     
-                    albumImage = self.getAlbumArtworkFromUriHelper(artistUri)
-                    
-                    
+                    self.artistCount++
                 } else {
                     debugPrint("Error when performing search for Artist Query")
                 }
-
         })
-        
-        return albumImage
     }
     
-    func getAlbumArtworkFromUriHelper(artistUri: NSURL) -> UIImage? {
+    func getArtistAlbumArtSpotifyUriLooper(tableViewController: AlbumViewController) {
+        for artist in tableViewController.artistDataList {
+            getArtistAlbumArtSpotifyUri(artist)
+        }
+        
+        while(artistCount != tableViewController.artistDataList.count) {
+            // Wait until threads are finished
+        }
+        
+        artistCount = 0
+        // ArtistCount == size of Artist Array:
+        // tell view controller to reload table data
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadArtistData", object: nil)
+        
+    }
+    
+    /* func getAlbumArtworkFromUriHelper(artistUri: NSURL, artist: Artist) {
         var albumImage: UIImage?
         var albumData = NSData()
         var albumRes = NSURLResponse()
@@ -57,22 +91,21 @@ class SpotifyManager {
                         if let albumObj = listObj.items[0] as? SPTPartialAlbum {
                             let albumImageUrl = albumObj.largestCover.imageURL
                             albumImage = UIImage(data: NSData(contentsOfURL: albumImageUrl)!)
-                            debugPrint(albumImage)
+                            artist.albumCover = albumImage
+                            self.artistCount++
                         }
                     } catch _ {
                         debugPrint("Error creating Album Obj")
                     }
                 } else {
-                    debugPrint(error)
+                    debugPrint("yo this shit is an error: \(error)")
                 }
-                
+   
             }).resume()
             
         } catch _ {
             debugPrint("Error when creating Album Request")
         }
-        
-        return albumImage
-    }
+    }*/
     
 }

@@ -38,7 +38,6 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
                 
         // set up notification so this view controller can be notified of data changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadArtistData", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "fetchAlbumCovers:", name: "fetchCovers", object: nil)
 
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
@@ -109,7 +108,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         }
         
         // set album cell fields
-        currentArtistCell.albumCover.image = artist.albumCovers![0]
+        currentArtistCell.albumCover.image = artist.albumCover!
         currentArtistCell.bandName!.text = artist.name
                 
         return currentArtistCell
@@ -129,13 +128,6 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
     func reloadTableData(notification: NSNotification?) {
         self.tableView.reloadData()
         SwiftSpinner.hide()
-    }
-    
-    /**
-     * Used to fetch album covers.
-     */
-    func fetchAlbumCovers(notification: NSNotification?) {
-        
     }
     
     // used to filter the artist list

@@ -41,15 +41,15 @@ class MusicMetadataProvider: NSObject {
 
                     // run through all artists returned and create models of them
                     for artist in xml["metadata"]["artist-list"]["artist"] {
-                        newArtist = Artist(name: artist["name"].element?.text, beginningArea: artist["begin-area"]["name"].element?.text, type: artist.element?.attributes["type"], albumCovers: nil, artistDescription: nil)
+                        newArtist = Artist(name: artist["name"].element?.text, beginningArea: artist["begin-area"]["name"].element?.text, type: artist.element?.attributes["type"], albumCover: nil, artistDescription: nil)
                         artistData?.append(newArtist)
                     }
 
                     // reset artist data list
                     tableViewController.artistDataList = artistData!
                     
-                    // tell view controller to reload table data
-                    NSNotificationCenter.defaultCenter().postNotificationName("reloadArtistData", object: nil)
+                    // get album artwork from Spotify
+                    SpotifyManager().getArtistAlbumArtSpotifyUriLooper(tableViewController)
                 }
             }
 
