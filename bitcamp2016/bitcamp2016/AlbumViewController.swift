@@ -17,16 +17,13 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     // Variable to store the current location
-    private var currentLocation: CLLocation!
+    var currentLocation: CLLocation!
     
     // Variable to store any errors with location
     private var locationError: NSError?
     
     // list of artists within current area
     var artistDataList: [Artist] = []
-    
-    // music metadata provider
-    let musicMetadataProvider: MusicMetadataProvider = MusicMetadataProvider()
     
     // pull to refresh handler
     let pullToRefresher = PullToRefresh()
@@ -46,13 +43,14 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+            self.currentLocation = locationManager.location
         }
         
         // set up pull to refresh
         self.tableView.addPullToRefresh(self.pullToRefresher, action: {
             self.tableView.endRefreshing()
             SwiftSpinner.show("fetching artists...")
-            self.musicMetadataProvider.getLocalArtistData(self)
+            ReverseGeocoder.getNearbyCityNames(self)
         })
     }
     
@@ -63,7 +61,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
         SwiftSpinner.show("fetching artists...")
         
         // populate the artist data list with local artist information
-        self.musicMetadataProvider.getLocalArtistData(self)
+        ReverseGeocoder.getNearbyCityNames(self)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -98,9 +96,6 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate {
     func reloadTableData(notification: NSNotification?) {
         self.tableView.reloadData()
         SwiftSpinner.hide()
-        
-        // print city info
-        ReverseGeocoder.getNearbyCityNames(currentLocation)
     }
     
     
