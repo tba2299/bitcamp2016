@@ -25,6 +25,9 @@
 		49D59EE61CB8D1C5005ED3FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EE51CB8D1C5005ED3FE /* AVFoundation.framework */; };
 		49D59EE81CB8D1CC005ED3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EE71CB8D1CC005ED3FE /* UIKit.framework */; };
 		49D59EF21CB8DEC6005ED3FE /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EF11CB8DEC6005ED3FE /* Spotify.framework */; };
+		49EB11C31CBA504C00F129B3 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB11C21CBA504C00F129B3 /* SongViewController.swift */; };
+		49EB11C51CBA520600F129B3 /* StreamSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB11C41CBA520600F129B3 /* StreamSongCell.swift */; };
+		49EB11C71CBA5ADB00F129B3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB11C61CBA5ADB00F129B3 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		49D59EE71CB8D1CC005ED3FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49D59EEE1CB8DB85005ED3FE /* SpotifyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifyHeader.h; sourceTree = "<group>"; };
 		49D59EF11CB8DEC6005ED3FE /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		49EB11C21CBA504C00F129B3 /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		49EB11C41CBA520600F129B3 /* StreamSongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamSongCell.swift; sourceTree = "<group>"; };
+		49EB11C61CBA5ADB00F129B3 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		663B5E466ECB4CA445BBCA1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +123,8 @@
 			children = (
 				3D6203A81CB8CC5B0006D819 /* Artist.swift */,
 				49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */,
+				49EB11C41CBA520600F129B3 /* StreamSongCell.swift */,
+				49EB11C61CBA5ADB00F129B3 /* Song.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				49D59EA81CB8B127005ED3FE /* AppDelegate.swift */,
 				49D59EAA1CB8B127005ED3FE /* ViewController.swift */,
 				49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */,
+				49EB11C21CBA504C00F129B3 /* SongViewController.swift */,
 				49D59EAC1CB8B127005ED3FE /* Main.storyboard */,
 				49D59EAF1CB8B127005ED3FE /* Assets.xcassets */,
 				49D59EB11CB8B127005ED3FE /* LaunchScreen.storyboard */,
@@ -412,10 +421,13 @@
 			files = (
 				49D59EDF1CB8BFD9005ED3FE /* AlbumViewController.swift in Sources */,
 				49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */,
+				49EB11C51CBA520600F129B3 /* StreamSongCell.swift in Sources */,
 				49D59EE41CB8D041005ED3FE /* SpotifyManager.swift in Sources */,
 				3D9B236E1CB9C227001FBD34 /* ReverseGeocoder.swift in Sources */,
+				49EB11C71CBA5ADB00F129B3 /* Song.swift in Sources */,
 				49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */,
 				49D59EDA1CB8BC40005ED3FE /* AlbumViewCell.swift in Sources */,
+				49EB11C31CBA504C00F129B3 /* SongViewController.swift in Sources */,
 				3D6203A21CB8C4270006D819 /* MusicMetadataProvider.swift in Sources */,
 				3D6203A91CB8CC5B0006D819 /* Artist.swift in Sources */,
 			);

@@ -11,6 +11,7 @@ import Foundation
 
 class SpotifyManager {
     var artistCount = 0
+    var songCount = 0
     
     func getArtistAlbumArtSpotifyUri(artist: Artist) {
         
@@ -71,41 +72,66 @@ class SpotifyManager {
         
     }
     
-    /* func getAlbumArtworkFromUriHelper(artistUri: NSURL, artist: Artist) {
-        var albumImage: UIImage?
-        var albumData = NSData()
-        var albumRes = NSURLResponse()
+    func getTopTracksLooper(tableViewController: SongViewController, artist: String?) {
         
-        do {
-            let albumRequest = try SPTArtist.createRequestForAlbumsByArtist(artistUri, ofType: SPTAlbumType.Album, withAccessToken: nil, market:nil)
+        debugPrint("inside top track looper")
+        getArtistSongsSpotifyUri(tableViewController, artist: artist)
+        
+        /*while(songCount < 1) {
+            // Wait
+        }*/
+        
+        songCount = 0
+        //NSNotificationCenter.defaultCenter().postNotificationName("reloadSongData", object: nil)
+    }
+    
+    func getArtistSongsSpotifyUri(tableViewController: SongViewController, artist: String?) {
+        debugPrint("inside get songs")
+        SPTSearch.performSearchWithQuery(artist, queryType: SPTSearchQueryType.QueryTypeArtist, accessToken: nil, callback: {
+            (error: NSError!, response: AnyObject!) -> Void in
+            debugPrint("inside callback")
             
-            NSURLSession.sharedSession().dataTaskWithRequest(albumRequest, completionHandler: {
-                (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            if error == nil {
+                let listPage = response as! SPTListPage
+                var artistObj: SPTPartialArtist
                 
-                if error == nil && data != nil && response != nil {
-                    albumData = data!
-                    albumRes = response!
-                    do {
-                        let listObj = try SPTListPage(fromData: albumData, withResponse: albumRes, expectingPartialChildren: true, rootObjectKey: nil)
+                if listPage.items != nil && listPage.items.count > 0 {
+                    artistObj = listPage.items[0] as! SPTPartialArtist
+                    let artistUri = artistObj.uri
+                    
+                    SPTArtist.artistsWithURIs([artistUri], accessToken: nil, callback: {
+                        (error: NSError?, response: AnyObject!) -> Void in
                         
-                        if let albumObj = listObj.items[0] as? SPTPartialAlbum {
-                            let albumImageUrl = albumObj.largestCover.imageURL
-                            albumImage = UIImage(data: NSData(contentsOfURL: albumImageUrl)!)
-                            artist.albumCover = albumImage
-                            self.artistCount++
+                        if error == nil {
+                            let sptArtist = response as! [SPTArtist]
+                            if sptArtist.count > 0 {
+                                debugPrint("after sptArtists \(sptArtist[0])")
+                                
+                                sptArtist[0].requestTopTracksForTerritory("US", withAccessToken: nil, callback: {
+                                    (error: NSError?, response: AnyObject!) -> Void in
+                                    
+                                    debugPrint("inside last callback")
+                                    if error == nil {
+                                        let topTracks = response as! [SPTTrack]
+                                        debugPrint("unwrapped")
+                                        if topTracks.count > 0 {
+                                            tableViewController.songArray = topTracks
+                                            self.songCount++
+                                            NSNotificationCenter.defaultCenter().postNotificationName("reloadSongData", object: nil)
+                                        }
+                                    }
+                                    
+                                })
+                            }
                         }
-                    } catch _ {
-                        debugPrint("Error creating Album Obj")
-                    }
-                } else {
-                    debugPrint("yo this shit is an error: \(error)")
+                    })
                 }
-   
-            }).resume()
-            
-        } catch _ {
-            debugPrint("Error when creating Album Request")
-        }
-    }*/
+                
+                self.songCount++
+            } else {
+                debugPrint("Its not good if theres an error here")
+            }
+        })
+    }
     
 }

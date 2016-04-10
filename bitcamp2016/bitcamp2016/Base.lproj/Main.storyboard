@@ -88,6 +88,7 @@
                                 <connections>
                                     <outlet property="albumCover" destination="eq7-HT-wdC" id="F0o-ab-LD3"/>
                                     <outlet property="bandName" destination="ywE-E1-x0T" id="dTu-QZ-xcC"/>
+                                    <segue destination="5cx-2Q-oq0" kind="showDetail" identifier="goToSongList" action="showViewController:sender:" id="HfY-4I-dXa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,6 +101,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOw-Gq-oOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1286" y="326"/>
+        </scene>
+        <!--Song View Controller-->
+        <scene sceneID="dTi-BZ-d6q">
+            <objects>
+                <tableViewController id="5cx-2Q-oq0" customClass="SongViewController" customModule="bitcamp2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSX-7d-EVA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="CM9-7B-Xqg" customClass="StreamSongCell" customModule="bitcamp2016" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CM9-7B-Xqg" id="CAB-4H-8Qv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stream Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-Mc-zmn">
+                                            <rect key="frame" x="0.0" y="-6" width="600" height="49"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songLabel" destination="rDU-Mc-zmn" id="sK3-8o-hZl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5cx-2Q-oq0" id="4aV-Md-Xfw"/>
+                            <outlet property="delegate" destination="5cx-2Q-oq0" id="Lix-ZE-uBq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVc-m6-jYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="324"/>
         </scene>
     </scenes>
 </document>
