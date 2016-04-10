@@ -304,7 +304,7 @@
 				TargetAttributes = {
 					49D59EA41CB8B126005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 969D6T2MXS;
+						DevelopmentTeam = MF67FDSFWV;
 					};
 					49D59EB81CB8B127005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
@@ -581,7 +581,7 @@
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016taskew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SpotifyHeader.h;
@@ -602,7 +602,7 @@
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016taskew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SpotifyHeader.h;

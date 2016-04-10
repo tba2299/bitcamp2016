@@ -63,6 +63,13 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         searchListController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchListController.searchBar
+        searchListController.searchBar.barTintColor = UIColor.orangeColor()
+        
+        self.edgesForExtendedLayout = UIRectEdge.None
+        self.navigationController?.navigationBar.hidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColor.orangeColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        self.navigationItem.hidesBackButton = true
         
         // used to close search on tap
         let closeSearch = UITapGestureRecognizer(target: self, action: "dismissSearch")
@@ -116,6 +123,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         
         // set album cell fields
         currentArtistCell.albumCover.image = artist.albumCover!
+        currentArtistCell.albumCover.clipsToBounds = true
         currentArtistCell.bandName!.text = artist.name
                 
         return currentArtistCell

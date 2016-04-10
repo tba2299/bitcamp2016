@@ -15,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        SPTAuth.defaultInstance().clientID = "ce2383b32d8442a28f406ad2acdf747b"
+        /*SPTAuth.defaultInstance().clientID = "ce2383b32d8442a28f406ad2acdf747b"
         SPTAuth.defaultInstance().redirectURL = NSURL(string: "bitcamp2016-spotify-login://returnafterlogin")!
         SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope]
         // Construct a login URL and open it
         let loginURL: NSURL = SPTAuth.defaultInstance().loginURL
         // Opening a URL in Safari close to application launch may trigger
         // an iOS bug, so we wait a bit before doing so.
-        application.performSelector(#selector(UIApplication.openURL(_:)), withObject: loginURL, afterDelay: 0.1)
+        application.performSelector(#selector(UIApplication.openURL(_:)), withObject: loginURL, afterDelay: 0.1)*/
         return true
     }
 

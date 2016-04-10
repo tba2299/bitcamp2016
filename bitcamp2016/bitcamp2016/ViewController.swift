@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.hidden = true
+    }
+    
+    @IBAction func loginWithSpotify(sender: AnyObject) {
+        let auth = SPTAuth.defaultInstance()
+        auth.clientID = "ce2383b32d8442a28f406ad2acdf747b"
+        auth.redirectURL = NSURL(string: "bitcamp2016-spotify-login://returnafterlogin")!
+        SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope]
+        let loginURL: NSURL = SPTAuth.defaultInstance().loginURL
+        UIApplication.sharedApplication().performSelector(#selector(UIApplication.openURL(_:)), withObject: loginURL, afterDelay: 0.1)
+        performSegueWithIdentifier("showArtists", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
