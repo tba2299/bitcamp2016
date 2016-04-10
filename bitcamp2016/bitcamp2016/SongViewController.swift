@@ -19,7 +19,7 @@ class SongViewController: UITableViewController {
         
         // set up notification so this view controller can be notified of data changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadSongData", object: nil)
-                
+        
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
     }

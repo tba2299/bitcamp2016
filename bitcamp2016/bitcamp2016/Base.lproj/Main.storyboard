@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="1286" y="326"/>
         </scene>
-        <!--Song View Controller-->
+        <!--Top Songs-->
         <scene sceneID="dTi-BZ-d6q">
             <objects>
-                <tableViewController id="5cx-2Q-oq0" customClass="SongViewController" customModule="bitcamp2016" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Top Songs" id="5cx-2Q-oq0" customClass="SongViewController" customModule="bitcamp2016" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSX-7d-EVA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
