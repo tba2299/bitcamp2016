@@ -21,6 +21,10 @@
 		49D59EC91CB8B127005ED3FE /* bitcamp2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EC81CB8B127005ED3FE /* bitcamp2016UITests.swift */; };
 		49D59EDA1CB8BC40005ED3FE /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */; };
 		49D59EDF1CB8BFD9005ED3FE /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */; };
+		49D59EE41CB8D041005ED3FE /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D59EE31CB8D041005ED3FE /* SpotifyManager.swift */; };
+		49D59EE61CB8D1C5005ED3FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EE51CB8D1C5005ED3FE /* AVFoundation.framework */; };
+		49D59EE81CB8D1CC005ED3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EE71CB8D1CC005ED3FE /* UIKit.framework */; };
+		49D59EF21CB8DEC6005ED3FE /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D59EF11CB8DEC6005ED3FE /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		49D59ECA1CB8B127005ED3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D59ED91CB8BC40005ED3FE /* AlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewCell.swift; path = bitcamp2016/AlbumViewCell.swift; sourceTree = "<group>"; };
 		49D59EDE1CB8BFD9005ED3FE /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		49D59EE31CB8D041005ED3FE /* SpotifyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		49D59EE51CB8D1C5005ED3FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		49D59EE71CB8D1CC005ED3FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49D59EEE1CB8DB85005ED3FE /* SpotifyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifyHeader.h; sourceTree = "<group>"; };
+		49D59EF11CB8DEC6005ED3FE /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		663B5E466ECB4CA445BBCA1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76472D5549ECFC509BCD1EE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D59EE81CB8D1CC005ED3FE /* UIKit.framework in Frameworks */,
+				49D59EF21CB8DEC6005ED3FE /* Spotify.framework in Frameworks */,
+				49D59EE61CB8D1C5005ED3FE /* AVFoundation.framework in Frameworks */,
 				12F36189A360DF97BF53F4D7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +132,8 @@
 		49D59E9C1CB8B126005ED3FE = {
 			isa = PBXGroup;
 			children = (
+				49D59EEE1CB8DB85005ED3FE /* SpotifyHeader.h */,
+				49D59EE01CB8D01A005ED3FE /* Managers */,
 				3D9B236A1CB97EA1001FBD34 /* Default Images */,
 				3D6203A71CB8CC3E0006D819 /* Models */,
 				3D6203A01CB8C4110006D819 /* Utilities */,
@@ -127,6 +141,7 @@
 				49D59EBC1CB8B127005ED3FE /* bitcamp2016Tests */,
 				49D59EC71CB8B127005ED3FE /* bitcamp2016UITests */,
 				49D59EA61CB8B126005ED3FE /* Products */,
+				49D59EE91CB8D1D0005ED3FE /* Frameworks */,
 				C30A0AC0C98B20BE253840DF /* Pods */,
 				5691E32AA6D2050E9925A9A6 /* Frameworks */,
 			);
@@ -172,6 +187,24 @@
 				49D59ECA1CB8B127005ED3FE /* Info.plist */,
 			);
 			path = bitcamp2016UITests;
+			sourceTree = "<group>";
+		};
+		49D59EE01CB8D01A005ED3FE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EE31CB8D041005ED3FE /* SpotifyManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		49D59EE91CB8D1D0005ED3FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D59EF11CB8DEC6005ED3FE /* Spotify.framework */,
+				49D59EE51CB8D1C5005ED3FE /* AVFoundation.framework */,
+				49D59EE71CB8D1CC005ED3FE /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5691E32AA6D2050E9925A9A6 /* Frameworks */ = {
@@ -262,7 +295,7 @@
 				TargetAttributes = {
 					49D59EA41CB8B126005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MF67FDSFWV;
+						DevelopmentTeam = 969D6T2MXS;
 					};
 					49D59EB81CB8B127005ED3FE = {
 						CreatedOnToolsVersion = 7.3;
@@ -379,6 +412,7 @@
 			files = (
 				49D59EDF1CB8BFD9005ED3FE /* AlbumViewController.swift in Sources */,
 				49D59EAB1CB8B127005ED3FE /* ViewController.swift in Sources */,
+				49D59EE41CB8D041005ED3FE /* SpotifyManager.swift in Sources */,
 				3D9B236E1CB9C227001FBD34 /* ReverseGeocoder.swift in Sources */,
 				49D59EA91CB8B127005ED3FE /* AppDelegate.swift in Sources */,
 				49D59EDA1CB8BC40005ED3FE /* AlbumViewCell.swift in Sources */,
@@ -528,11 +562,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016taskew;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = SpotifyHeader.h;
 			};
 			name = Debug;
 		};
@@ -543,11 +583,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = bitcamp2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016taskew;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TNAdevs.bitcamp2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = SpotifyHeader.h;
 			};
 			name = Release;
 		};

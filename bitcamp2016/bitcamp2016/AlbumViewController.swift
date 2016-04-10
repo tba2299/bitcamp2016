@@ -24,7 +24,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
     
     // list of artists within current area
     var artistDataList: [Artist] = []
-    
+
     private var filteredArtistDataList: [Artist] = []
     
     // search controller
@@ -38,7 +38,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
                 
         // set up notification so this view controller can be notified of data changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTableData:", name: "reloadArtistData", object: nil)
-    
+
         // set container view for spinner
         SwiftSpinner.useContainerView(self.view)
         
@@ -108,7 +108,7 @@ class AlbumViewController: UITableViewController, CLLocationManagerDelegate, UIS
         }
         
         // set album cell fields
-        currentArtistCell.albumCover.image = UIImage(named: "default_album_art.jpg")   // change to actual album cover
+        currentArtistCell.albumCover.image = artist.albumCover!
         currentArtistCell.bandName!.text = artist.name
                 
         return currentArtistCell
